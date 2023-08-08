@@ -1,17 +1,15 @@
-## Introduction
+# Introduction
 
 Python is a programming language developed by [Guido Von Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum). It is a high-level, general purpose programming language.
 
-Fast to learn, most widely used for **Data Science, AI and Machine Learning**.
+Fast to learn, most widely used for **Data Science, AI and Machine Learning**. It is an interpreted language, which means the program called the *python interpreter* goes through the program line by line.
 
-It is an interpreted language, which means the program called the *python interpreter* goes through the program line by line.
-
-> If you simply want to practice the basics, start at [[#Basics]].
+> If you simply want to practice the basics, start at [Basics](#Basics).
 # Setup New Project
 
 > **Requirements**: Need familiarity with the **command line**, use [VSCode](https://code.visualstudio.com/) 
 
-1. Create a new [[#Virtual Environment]]:
+1. Create a new [Virtual Environment](#virtual-environment):
 
 ```python
 python -m venv .venv
