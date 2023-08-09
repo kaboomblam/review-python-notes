@@ -2,7 +2,7 @@
 
 Python is a programming language developed by [Guido Von Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum). It is a high-level, general purpose programming language.
 
-Fast to learn, most widely used for **Data Science, AI and Machine Learning**. In computer programming there are **Compiled Languages** and **Interpreted Languages**. Python is an interpreted language, a program called the *python interpreter*, goes through the code line by line to translate human-readable code to machine-readable code. To learn more about Interpreted and Compiled Programming languages, read [this FreeCodeCamp Article](https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/).
+Fast to learn, most widely used for **Data Science, AI and Machine Learning**. In computer programming there are **Compiled Languages** and **Interpreted Languages**. Python is an interpreted language, a program called the *python interpreter*, goes through the code line by line to translate human-readable code to machine-readable code. [Learn more about Compiled and Interpreted Languages - FreeCodeCamp](https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/).
 
 > If you simply want to practice the basics, start at [Basics](#Basics).
 # Setup New Project
@@ -33,6 +33,10 @@ Ensure that the correct python environment is selected in VSCode: Review [Docs o
 ![](https://code.visualstudio.com/assets/docs/languages/python/selected-interpreter-status-bar.png)
 
 In our case this should read `'.venv':venv` instead of `'base':conda`
+
+⚠**Ensure to also Install Python Extensions:** 
+- [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python),
+- [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter).
 
 # Basics
 Some basics regarding the python language.
@@ -75,57 +79,66 @@ print(i) # 1
 i = 5 ** 2 # power
 print(i) # 25
 ```
-#### **Sequences** of data:
-- They don't need to be of the same type explicitly
+### **Sequences** of data:
+Python allows sequences of data to be used. They don't need to be of the same type explicitly
 
 ```python
-name = "Sequence" # sequence of text
+name = "Sequence" # a word is a sequence of letters/characters
+# to access an element in a sequence you variable_name[index]
+# an index simply is the position in the sequence and begins from 0 not 1
+# i.e.
+print(name[0]) # will print 'S'
+print(name[1]) # will print 'e'
+print(name[2]) # will print 'q'
+# and so on...
 coords = (10, 0, 20.0) # tuple
 ```
 
-##### List
+> In python, we start counting from `0` not `1`, so the first element is `0`.
+
+### List
 
 - They are **mutable** meaning values can be changed:
 ```python
 names = ["Alice", "Bob", "Charlie"] # list
 ```
 
-###### How to Change a List value
+#### How to Change a List value
 ```python
 names = ["Alice", "Bob", "Charlie"] # list
 names[0] = "Peter"
 ```
 
-###### Append a List
+#### Append a List
 ```python
 names = ["Alice", "Bob", "Charlie"] # list
 names.append("Walker")
 ```
-###### Extend a List
+#### Extend a List
 ```python
 names = ["Alice", "Bob", "Charlie"] # list
 names.extend(["Norris", "Chuck"])
 ```
-###### Pop a List
+#### Pop a List
 This removes last element:
 ```python
 names = ["Alice", "Bob", "Charlie"] # list
 names.pop() # pop last element
 names.pop(1) # remove second element
 ```
-##### Tuple
+### Tuple
 - They are **immutable** meaning values can't be changed
 ```python
 x = (0, 0, 2, 2)
 ```
-###### Get element in a Tuple
+#### Get element in a Tuple
 ```python
 x = (0, 0, 2, 2)
 print(x[0])
 ```
 
-#### **Collections**:
-##### Sets:
+## **Collections**:
+### Sets:
 - All items are **unique**
 ```python
 s = set()
@@ -135,7 +148,7 @@ s.add(2)
 s.add(2)
 print(s)
 ```
-#### Dictionaries:
+### Dictionaries:
 - Collection of key-value pairs
 ```python
 ages = {"Alice": 22, "Bob": 27}
@@ -144,6 +157,8 @@ print(ages)
 ```
 
 # Configuration and tricks
+Some few helpful tips and tricks generally in python.
+
 ## http server
 
 Start a simple http server:
