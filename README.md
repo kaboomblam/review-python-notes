@@ -2,25 +2,33 @@
 
 Python is a programming language developed by [Guido Von Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum). It is a high-level, general purpose programming language.
 
-Fast to learn, most widely used for **Data Science, AI and Machine Learning**. In computer programming they are **Compiled Languages** and **Interpreted Languages**. Python is an interpreted language, a program called the *python interpreter* goes through the program line by line to translate human-readable code to machine-readable code. To learn more about Interpreted and Compiled Programming languages, read [this FreeCodeCamp Article](https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/).
+Fast to learn, most widely used for **Data Science, AI and Machine Learning**. In computer programming there are **Compiled Languages** and **Interpreted Languages**. Python is an interpreted language, a program called the *python interpreter* goes through the program line by line to translate human-readable code to machine-readable code. To learn more about Interpreted and Compiled Programming languages, read [this FreeCodeCamp Article](https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/).
 
 > If you simply want to practice the basics, start at [Basics](#Basics).
 # Setup New Project
 
 > **Requirements**:
-> - Need familiarity with the **command line**,
-> - Use [VSCode](https://code.visualstudio.com/) (optional) 
+> - Need familiarity with the **command line**, learn how to use the command line [in this article](https://www.freecodecamp.org/news/how-to-use-the-cli-beginner-guide/)
+> - Use [VSCode](https://code.visualstudio.com/) (optional)
 
-1. Create a new [Virtual Environment](#virtual-environment):
+1. Install Python: Download python from [python.org](https://www.python.org/)
+> Ensure when installing you select `ADD TO PATH` option
+>
+> To ensure you have installed correctly, open command line and run command `python --version` if it shows version number then installation was done correctly.
+
+2. Create an empty folder, (we are naming this one **py-start** but use any name you like), open folder in VSCode (read [this guide if unsure how](https://learn.microsoft.com/en-us/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions?view=vs-2022#:~:text=On%20the%20Visual%20Studio%20menu,link%20on%20the%20start%20window.)), using command line terminal in VSCode, create a new [Virtual Environment](#virtual-environment).
+> Python programs access resources on your system, these resources are sometimes called **dependencies**, a virtual environment contains resources to each python program rather than resources being shared across multiple python programs (system wide). This should help you share and manage python projects better.
+>
+> You'll learn more about this as you progress, for now copy the command below:
 
 ```python
 python -m venv .venv
 ```
 
-> If you are using VSCode:
-> - You may required to install; **linter**, **code formatter** at different points.
+3. If you are using VSCode:
+> - You may be prompted to install; **linter**, **code formatter** at different points.
 
-2. Ensure that the correct python environment is selected in VSCode: Review [Docs](https://code.visualstudio.com/docs/languages/python#_environments).
+Ensure that the correct python environment is selected in VSCode: Review [Docs on Environments in VSCode](https://code.visualstudio.com/docs/languages/python#_environments),
 
 ![](https://code.visualstudio.com/assets/docs/languages/python/selected-interpreter-status-bar.png)
 
