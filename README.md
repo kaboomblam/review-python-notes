@@ -2,12 +2,14 @@
 
 Python is a programming language developed by [Guido Von Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum). It is a high-level, general purpose programming language.
 
-Fast to learn, most widely used for **Data Science, AI and Machine Learning**. It is an interpreted language, which means the program called the *python interpreter* goes through the program line by line.
+Fast to learn, most widely used for **Data Science, AI and Machine Learning**. In computer programming they are **Compiled Languages** and **Interpreted Languages**. Python is an interpreted language, a program called the *python interpreter* goes through the program line by line to translate human-readable code to machine-readable code. To learn more about Interpreted and Compiled Programming languages, read [this FreeCodeCamp Article](https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/).
 
 > If you simply want to practice the basics, start at [Basics](#Basics).
 # Setup New Project
 
-> **Requirements**: Need familiarity with the **command line**, use [VSCode](https://code.visualstudio.com/) 
+> **Requirements**:
+> - Need familiarity with the **command line**,
+> - Use [VSCode](https://code.visualstudio.com/) (optional) 
 
 1. Create a new [Virtual Environment](#virtual-environment):
 
@@ -15,24 +17,33 @@ Fast to learn, most widely used for **Data Science, AI and Machine Learning**. I
 python -m venv .venv
 ```
 
-> You may required to install **linter**, and **code formatter** as well by VSCode.
+> If you are using VSCode:
+> - You may required to install; **linter**, **code formatter** at different points.
 
-2. Ensure that the correct python environment is selected in VSCode: Review [Docs](https://code.visualstudio.com/docs/languages/python#_environments) 
+2. Ensure that the correct python environment is selected in VSCode: Review [Docs](https://code.visualstudio.com/docs/languages/python#_environments).
+
+![](https://code.visualstudio.com/assets/docs/languages/python/selected-interpreter-status-bar.png)
+
+In our case this should read `'.venv':venv` instead of `'base':conda`
+
 # Basics
+Some basics regarding the python language.
 
 ## Data Types & Variables
 
 ### Variables
 
-A variable in programming is a symbolic name that represents a value stored in the computer's memory. It's essentially a way to label and store data for later use.
+A _variable_ in programming is a symbolic name that represents a value stored in the computer's memory. It's essentially a way to label and store data for later use.
 
 #### Set a Variable
-- Convention to separate with underscores: `hello_world = 'hello world'`
+- The convention is to separate multiple words in a variable name with underscores: `hello_world = 'hello world'`
 
 ```python
 hello = 'hello'
 ```
-### Different Data Types for Variables
+### Data Types
+
+Variables can be of different data types, meaning they are storing that specific type of **data** in memory.
 
 ```python
 i = 28 # interger
@@ -46,16 +57,21 @@ n = None
 
 ```python
 i = 1 + 1 # add
+print(i) # 2
 i = 1 / 1 # divide
+print(i) # 1
 i = 1 - 1 # subtract 
+print(i) # 0
 i = 1 * 1 # multiply
-
+print(i) # 1
+i = 5 ** 2 # power
+print(i) # 25
 ```
 #### **Sequences** of data:
 - They don't need to be of the same type explicitly
 
 ```python
-name = "Sequence"
+name = "Sequence" # sequence of text
 coords = (10, 0, 20.0) # tuple
 ```
 
